@@ -3,7 +3,7 @@ let resultado = document.querySelector('#saida')
 let criptografar = document.querySelector('#btn-cripto')
 let descriptografar = document.querySelector('#btn-descripto')
 let copiar = document.querySelector('#btn-copy')
-const regex = new RegExp('^[a-z 0-9\b]');
+const regex = new RegExp("^[a-z \b]+$");
 
 
 //eventos
@@ -61,4 +61,8 @@ function caracteres(testeTexto) {
   } else {
     return testeTexto
   }
+}
+
+function blockSpecialsChars(text){
+  return text.replace(/[1\\!\¹\'2'\@\²\'3'\#\³\'4'\$\£\'5'\%\¢\'6'\¨\¬\'7'\&\'8'\*\'9'\(\'0'\´\)\-\_\=\+\§\`\[\{\ª\~\^\}\º\|\,\<\.\>\;\:\\\\/\?\°\"\']/g, '')
 }
