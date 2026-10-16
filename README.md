@@ -64,6 +64,3 @@ O projeto não possui dependências externas obrigatórias.
 
 Este projeto foi desenvolvido em **2022** como atividade de aprendizagem. Ele permanece público para preservar o histórico da minha evolução em programação.
 
-## Licença
-
-Consulte o arquivo [LICENSE](LICENSE).
